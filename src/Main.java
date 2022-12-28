@@ -1,6 +1,7 @@
 import br.com.dio.desafio.dominio.Bootcamp;
 import br.com.dio.desafio.dominio.Dev;
 import br.com.dio.desafio.dominio.Mentoria;
+import com.sun.xml.internal.bind.v2.runtime.output.StAXExStreamWriterOutput;
 
 import java.util.ArrayList;
 
@@ -39,10 +40,27 @@ class Curso {
         bootcamp.setConteudos().add(curso2);
         bootcamp.setConteudos().add(mentoria);
 
+                Dev devCamila = new Dev();
+        devCamila.setNome();
+        devCamila.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
+        devCamila.progredir();
+        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
+        System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosInscritos());
+        System.out.println("XP:" + devCamila.calcularTotalXp());
+
+        System.out.println(*-------*);
+
         Dev devDebora = new Dev();
         devDebora.setNome("Debora");
+        devDebora.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos Débora:" + devDebora.getConteudosInscritos());
+        devDebora.progredir();
+        devDebora.progredir();
+        devDebora.progredir();
+        System.out.println("Conteúdos Inscritos Débora:" + devDebora.getConteudosInscritos());
+        System.out.println("Conteúdos Concluídos Débora:" + devDebora.getConteudosInscritos());
+        System.out.println("XP:" + devDebora.calcularTotalXp());
 
-        Dev devCamila = new Dev();
-        devCamila.setNome();
     }
 }

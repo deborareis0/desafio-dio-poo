@@ -32,8 +32,7 @@ public class Curso extends Conteudo {
 
 
     public void setCargaHoraria(int cargaHoraria) {
-        this.cargaHoraria = cargaHoraria;
-    }
+        this.cargaHoraria = cargaHoraria;}
     @Override
     public String toString() {
         return "Curso{" +

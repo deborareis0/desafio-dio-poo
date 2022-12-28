@@ -27,7 +27,8 @@ public class Dev {
 
     public double calcularTotalXp() {
         Iterator<Conteudo> iterator = this.conteudosConcluidos.iterator();
-        double soma = 0;
+        double soma = 0;}
+
         while(iterator.hasNext()){
             double next = iterator.next().calcularXp();
             soma += next;
@@ -75,6 +76,6 @@ public class Dev {
         public int hashCode() {
             return Objects.hash(nome, conteudosInscritos, conteudosConcluidos);
         }
-}
+
 
 
