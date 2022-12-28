@@ -6,22 +6,25 @@ public class Mentoria extends Conteudo {
     @Override
     public double calcularXP() {
         return XP_PADRAO + 20d;
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
     }
+        public Mentoria(){
 
+    }
     public java.util.Date getData() {
         return data;
     }
-
     public void setData(java.util.Date data) {
         this.data = data;
     }
-
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
     @Override
     public String toString() {
         return "Mentoria{" +
-                "titulo='" + getTitulo() + '\'' +                ", data=" + data +
+                "titulo='" + getTitulo() + '\'' +
+                ", descricao='" + getDescricao() + '\'' +
+                ", data=" + data +
                 '}';
     }
 }

@@ -1,3 +1,5 @@
+import br.com.dio.desafio.dominio.Bootcamp;
+import br.com.dio.desafio.dominio.Dev;
 import br.com.dio.desafio.dominio.Mentoria;
 
 import java.util.ArrayList;
@@ -30,5 +32,17 @@ class Curso {
         System.out.println(curso2);
         System.out.println(mentoria);
 
+        Bootcamp bootcamp = new Bootcamp();
+        bootcamp.setNome("Bootcamp Java Developer");
+        bootcamp.setDescricao("Descrição Bootcamp Java Developer");
+        bootcamp.setConteudos().add(curso1);
+        bootcamp.setConteudos().add(curso2);
+        bootcamp.setConteudos().add(mentoria);
+
+        Dev devDebora = new Dev();
+        devDebora.setNome("Debora");
+
+        Dev devCamila = new Dev();
+        devCamila.setNome();
     }
 }
